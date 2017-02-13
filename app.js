@@ -601,6 +601,7 @@ function initHandlers(heroes){
     let currentHero = heroes[Math.floor(Math.random() * heroes.length)];
     if($("#nickBox").is(":checked")){
       currentHero = heroes[42];
+      console.log("whaaaaaaaa");
     }
     $("#flavorText").text("");
     $("#heroText").text(currentHero.localized_name);
