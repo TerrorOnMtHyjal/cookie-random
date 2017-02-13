@@ -592,7 +592,6 @@ function initHandlers(heroes){
     if(currentHero.flavorText){
       $("#flavorText").text(currentHero.flavorText);
     }
-
   });
 }
 
