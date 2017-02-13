@@ -591,7 +591,8 @@ const heroes = [{
   {
     "name": "monkey_king",
     "id": 114,
-    "localized_name": "Monkey King"
+    "localized_name": "Monkey King",
+    "flavorText": `"Use your ult from the trees!" - Mati`
   }
 ];
 
