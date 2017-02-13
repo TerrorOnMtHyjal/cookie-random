@@ -599,6 +599,9 @@ const heroes = [{
 function initHandlers(heroes){
   $("#randomHeroBtn").on("click", () => {
     let currentHero = heroes[Math.floor(Math.random() * heroes.length)];
+    if($("#nickBox").is(":checked")){
+      currentHero = heroes[42];
+    }
     $("#flavorText").text("");
     $("#heroText").text(currentHero.localized_name);
 
