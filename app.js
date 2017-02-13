@@ -207,7 +207,8 @@ const heroes = [{
   {
     "name": "skeleton_king",
     "id": 42,
-    "localized_name": "Wolf King"
+    "localized_name": "Wolf King",
+    "flavorText": "What the hell is a rah-eighth?"
   },
   {
     "name": "death_prophet",
@@ -299,7 +300,8 @@ const heroes = [{
   {
     "name": "night_stalker",
     "id": 60,
-    "localized_name": "Night Stalker"
+    "localized_name": "Night Stalker",
+    "flavorText": "I mean, I'll take it! ...Is Tiger here?"
   },
   {
     "name": "broodmother",
@@ -403,7 +405,8 @@ const heroes = [{
   {
     "name": "lone_druid",
     "id": 80,
-    "localized_name": "Lone Druid"
+    "localized_name": "Lone Druid",
+    "flavorText": "I'm feeding."
   },
   {
     "name": "chaos_knight",
@@ -537,7 +540,8 @@ const heroes = [{
   {
     "name": "ember_spirit",
     "id": 106,
-    "localized_name": "Ember Spirit"
+    "localized_name": "Ember Spirit",
+    "flavorText": "Tiger, switch with me?"
   },
   {
     "name": "earth_spirit",
