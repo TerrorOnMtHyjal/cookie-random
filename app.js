@@ -205,7 +205,7 @@ const heroes = [{
   {
     "name": "skeleton_king",
     "id": 42,
-    "localized_name": "Skeleton King"
+    "localized_name": "Wolf King"
   },
   {
     "name": "death_prophet",
