@@ -328,7 +328,8 @@ const heroes = [{
   {
     "name": "chen",
     "id": 66,
-    "localized_name": "Chen"
+    "localized_name": "Chen",
+    "flavorText": "Oh christ, please no."
   },
   {
     "name": "spectre",
@@ -370,12 +371,13 @@ const heroes = [{
     "name": "invoker",
     "id": 74,
     "localized_name": "Invoker",
-    "flavorText": "TOO MANY BUTTONS OH GABEN PLEASE"
+    "flavorText": "So...many...buttons. At least I get to go mid!"
   },
   {
     "name": "silencer",
     "id": 75,
-    "localized_name": "Silencer"
+    "localized_name": "Silencer",
+    "flavorText": "I'm not supporting."
   },
   {
     "name": "obsidian_destroyer",
@@ -422,7 +424,8 @@ const heroes = [{
   {
     "name": "ogre_magi",
     "id": 84,
-    "localized_name": "Ogre Magi"
+    "localized_name": "Ogre Magi",
+    "flavorText": `"This is a good random!" "No it's not."`
   },
   {
     "name": "undying",
@@ -447,7 +450,8 @@ const heroes = [{
   {
     "name": "naga_siren",
     "id": 89,
-    "localized_name": "Naga Siren"
+    "localized_name": "Naga Siren",
+    "flavorText": "Unlike Jared, I'll actually use song."
   },
   {
     "name": "keeper_of_the_light",
@@ -464,7 +468,8 @@ const heroes = [{
   {
     "name": "visage",
     "id": 92,
-    "localized_name": "Visage"
+    "localized_name": "Visage",
+    "flavorText": "Oh...shit. Um. Mid?"
   },
   {
     "name": "slark",
