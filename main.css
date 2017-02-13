@@ -1,0 +1,18 @@
+.wrapper{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.flexWrap{
+  text-align: center;
+}
+
+#prayer{
+  font-style: italic;
+}
+
+#heroText{
+  
+}
