@@ -279,7 +279,8 @@ const heroes = [{
   {
     "name": "clinkz",
     "id": 56,
-    "localized_name": "Clinkz"
+    "localized_name": "Clinkz",
+    "flavorText": "No, Jared, I won't swap with you."
   },
   {
     "name": "omniknight",
@@ -429,7 +430,7 @@ const heroes = [{
     "name": "ogre_magi",
     "id": 84,
     "localized_name": "Ogre Magi",
-    "flavorText": `"This is a good random!" "No it's not."`
+    "flavorText": `"Orb of venom?" "Always!"`
   },
   {
     "name": "undying",
@@ -595,7 +596,7 @@ const heroes = [{
 ];
 
 function initHandlers(heroes){
-  $("#randomHeroBtn").on("click", function(){
+  $("#randomHeroBtn").on("click", () => {
     let currentHero = heroes[Math.floor(Math.random() * heroes.length)];
     $("#flavorText").text("");
     $("#heroText").text(currentHero.localized_name);
