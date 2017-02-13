@@ -159,7 +159,8 @@ const heroes = [{
   {
     "name": "enigma",
     "id": 33,
-    "localized_name": "Enigma"
+    "localized_name": "Enigma",
+    "flavorText" : "...in the jungle."
   },
   {
     "name": "tinker",
@@ -287,7 +288,7 @@ const heroes = [{
     "name": "enchantress",
     "id": 58,
     "localized_name": "Enchantress",
-    "flavorText": "Oh christ, please no."
+    "flavorText": "Sproink."
   },
   {
     "name": "huskar",
