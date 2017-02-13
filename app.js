@@ -66,7 +66,8 @@ const heroes = [{
   {
     "name": "pudge",
     "id": 14,
-    "localized_name": "Pudge"
+    "localized_name": "Pudge",
+    "flavorText": "Awwwwwwwwwwwwwwwwwwwwww shit!"
   },
   {
     "name": "razor",
@@ -136,12 +137,14 @@ const heroes = [{
   {
     "name": "slardar",
     "id": 28,
-    "localized_name": "Slardar"
+    "localized_name": "Slardar",
+    "flavorText": "Close enough to Centaur...?"
   },
   {
     "name": "tidehunter",
     "id": 29,
-    "localized_name": "Tidehunter"
+    "localized_name": "Tidehunter",
+    "flavorText": "Time to team fight!"
   },
   {
     "name": "witch_doctor",
@@ -186,7 +189,8 @@ const heroes = [{
   {
     "name": "queenofpain",
     "id": 39,
-    "localized_name": "Queen of Pain"
+    "localized_name": "Queen of Pain",
+    "flavorText": "Thank you Gaben for sending me mid!"
   },
   {
     "name": "venomancer",
@@ -246,7 +250,8 @@ const heroes = [{
   {
     "name": "rattletrap",
     "id": 51,
-    "localized_name": "Clockwerk"
+    "localized_name": "Clockwerk",
+    "flavorText": "This should go...well? Please?"
   },
   {
     "name": "leshrac",
@@ -281,7 +286,8 @@ const heroes = [{
   {
     "name": "enchantress",
     "id": 58,
-    "localized_name": "Enchantress"
+    "localized_name": "Enchantress",
+    "flavorText": "Oh christ, please no."
   },
   {
     "name": "huskar",
@@ -336,12 +342,13 @@ const heroes = [{
   {
     "name": "ancient_apparition",
     "id": 68,
-    "localized_name": "Ancient Apparition"
+    "localized_name": "Ancient Apparition",
+    "flavorText": "Chilling touch OP!"
   },
   {
     "name": "ursa",
     "id": 70,
-    "localized_name": "Ursa"
+    "localized_name": "Ursa",
   },
   {
     "name": "spirit_breaker",
@@ -361,7 +368,8 @@ const heroes = [{
   {
     "name": "invoker",
     "id": 74,
-    "localized_name": "Invoker"
+    "localized_name": "Invoker",
+    "flavorText": "TOO MANY BUTTONS OH GABEN PLEASE"
   },
   {
     "name": "silencer",
@@ -401,12 +409,14 @@ const heroes = [{
   {
     "name": "meepo",
     "id": 82,
-    "localized_name": "Meepo"
+    "localized_name": "Meepo",
+    "flavorText": "One Meepo only meta incoming!"
   },
   {
     "name": "treant",
     "id": 83,
-    "localized_name": "Treant Protector"
+    "localized_name": "Treant Protector",
+    "flavorText": "Time to punch some things."
   },
   {
     "name": "ogre_magi",
@@ -441,12 +451,14 @@ const heroes = [{
   {
     "name": "keeper_of_the_light",
     "id": 90,
-    "localized_name": "Keeper of the Light"
+    "localized_name": "Keeper of the Light",
+    "flavorText": "KOOOOON-DAAAHHH-LEEE-NEEEEEE"
   },
   {
     "name": "wisp",
     "id": 91,
-    "localized_name": "Wisp"
+    "localized_name": "Wisp",
+    "flavorText": "Gaben, why have you forsaken me?"
   },
   {
     "name": "visage",
@@ -471,12 +483,14 @@ const heroes = [{
   {
     "name": "centaur",
     "id": 96,
-    "localized_name": "Centaur Warrunner"
+    "localized_name": "Centaur Warrunner",
+    "flavorText": "ALL PRAISE LORD GABEN!"
   },
   {
     "name": "magnataur",
     "id": 97,
-    "localized_name": "Magnus"
+    "localized_name": "Magnus",
+    "flavorText": "At least Nick isn't playing him..."
   },
   {
     "name": "shredder",
@@ -521,7 +535,8 @@ const heroes = [{
   {
     "name": "earth_spirit",
     "id": 107,
-    "localized_name": "Earth Spirit"
+    "localized_name": "Earth Spirit",
+    "flavorText": "Oh for the love of Gaben..."
   },
   {
     "name": "abyssal_underlord",
@@ -531,7 +546,8 @@ const heroes = [{
   {
     "name": "terrorblade",
     "id": 109,
-    "localized_name": "Terrorblade"
+    "localized_name": "Terrorblade",
+    "flavorText": "Jared, want to switch?"
   },
   {
     "name": "phoenix",
@@ -541,28 +557,41 @@ const heroes = [{
   {
     "name": "techies",
     "id": 105,
-    "localized_name": "Techies"
+    "localized_name": "Techies",
+    "flavorText": "Nick, want to switch?"
   },
   {
     "name": "oracle",
     "id": 111,
-    "localized_name": "Oracle"
+    "localized_name": "Oracle",
+    "flavorText": "Apek, want to switch?"
   },
   {
     "name": "winter_wyvern",
     "id": 112,
-    "localized_name": "Winter Wyvern"
+    "localized_name": "Winter Wyvern",
   },
   {
     "name": "arc_warden",
     "id": 113,
     "localized_name": "Arc Warden"
+  },
+  {
+    "name": "monkey_king",
+    "id": 114,
+    "localized_name": "Monkey King"
   }
 ];
 
 function initHandlers(heroes){
   $("#randomHeroBtn").on("click", function(){
-    $("#heroText").text(heroes[Math.floor(Math.random() * heroes.length)].localized_name);
+    let currentHero = heroes[Math.floor(Math.random() * heroes.length)];
+    $("#heroText").text(currentHero.localized_name);
+
+    if(currentHero.flavorText){
+      $("#flavorText").text(currentHero.localized_name);
+    }
+
   });
 }
 
