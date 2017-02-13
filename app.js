@@ -92,7 +92,8 @@ const heroes = [{
   {
     "name": "tiny",
     "id": 19,
-    "localized_name": "Tiny"
+    "localized_name": "Tiny",
+    "flavorText": "Nick, come offlane with me! Neither of us are supporting though."
   },
   {
     "name": "vengefulspirit",
