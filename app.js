@@ -586,10 +586,11 @@ const heroes = [{
 function initHandlers(heroes){
   $("#randomHeroBtn").on("click", function(){
     let currentHero = heroes[Math.floor(Math.random() * heroes.length)];
+    $("#flavorText").text("");
     $("#heroText").text(currentHero.localized_name);
 
     if(currentHero.flavorText){
-      $("#flavorText").text(currentHero.localized_name);
+      $("#flavorText").text(currentHero.flavorText);
     }
 
   });
