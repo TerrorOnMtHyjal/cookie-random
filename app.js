@@ -166,7 +166,8 @@ const heroes = [{
   {
     "name": "tinker",
     "id": 34,
-    "localized_name": "Tinker"
+    "localized_name": "Tinker",
+    "flavorText": "Yoda, want to swap?"
   },
   {
     "name": "sniper",
@@ -218,7 +219,8 @@ const heroes = [{
   {
     "name": "phantom_assassin",
     "id": 44,
-    "localized_name": "Phantom Assassin"
+    "localized_name": "Phantom Assassin",
+    "flavorText": "Crit like you never have before, Slexi!"
   },
   {
     "name": "pugna",
@@ -238,7 +240,8 @@ const heroes = [{
   {
     "name": "luna",
     "id": 48,
-    "localized_name": "Luna"
+    "localized_name": "Luna",
+    "flavorText": "For salad mayonnaise!"
   },
   {
     "name": "dragon_knight",
@@ -445,7 +448,8 @@ const heroes = [{
   {
     "name": "disruptor",
     "id": 87,
-    "localized_name": "Disruptor"
+    "localized_name": "Disruptor",
+    "flavorText": "I grow in power and crap!"
   },
   {
     "name": "nyx_assassin",
@@ -599,15 +603,23 @@ const heroes = [{
 function initHandlers(heroes){
   $("#randomHeroBtn").on("click", () => {
     let currentHero = heroes[Math.floor(Math.random() * heroes.length)];
+
     if($("#nickBox").is(":checked")){
       currentHero = heroes[42];
-      console.log("whaaaaaaaa");
     }
     $("#flavorText").text("");
     $("#heroText").text(currentHero.localized_name);
 
     if(currentHero.flavorText){
       $("#flavorText").text(currentHero.flavorText);
+    }
+  });
+
+  $("#nickBox").change((e) =>{
+    if($(e.currentTarget).is(":checked")){
+      $("img").attr("src", "phantom.png");
+    }else{
+      $("img").attr("src", "cookie2.jpg")
     }
   });
 }

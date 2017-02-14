@@ -13,7 +13,22 @@
   font-style: italic;
 }
 
-#image{
+#imageWrapper{
+  height: 250px;
+}
+/*#image{
   height: 50%;
   width: 50%;
+}*/
+
+#controls{
+  display: flex;
+  justify-content: flex-end;
+}
+#randomHeroBtn{
+  position: absolute;
+  left: 48.8%;
+}
+#nickBox{
+  margin-left: auto;
 }

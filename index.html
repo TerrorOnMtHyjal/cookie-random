@@ -3,23 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Cookie's Prayer Simulator</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="main.css?v=1.23">
 </head>
 <body>
   <div class="wrapper">
     <div class="flexWrap">
-      <div>
-        <img id="image" src="cookie.jpg" alt="">
+      <div id="imageWrapper">
+        <img id="image" src="cookie2.jpg" alt="">
       </div>
       <h1>COOKIE'S RANDOM SIMULATOR</h1>
       <p id="prayer">"Dear Gaben, please bless my randoms. I trust in thee and accept my fate as you determine!"</p>
-      <button id="randomHeroBtn">Amen</button>
-      <label><input type="checkbox" name="checkbox" value="Nick" id="nickBox">Nick is randoming!</label>
+      <div id="controls">
+        <button id="randomHeroBtn">Amen</button>
+        <label><input type="checkbox" name="checkbox" value="Nick" id="nickBox">Nick is randoming!</label>
+      </div>
       <h2 id="heroText"></h2>
       <p id="flavorText"></p>
     </div>
   </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<script src="app.js"></script>
+<script src="app.js?v=1.23"></script>
 </html>
